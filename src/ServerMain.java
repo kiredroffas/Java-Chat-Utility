@@ -36,7 +36,7 @@ public class ServerMain { //Servermain starts server, accepts client socket, ini
 				System.out.print("");            //while loop inside writetoclient thread
 			}
 			sm.clientSock.close();	//close client socket
-	   }
+		}
 	}
 }
 
@@ -62,7 +62,7 @@ class WriteToClient extends Thread{ //Reads stdin and prints it to client
 		flags = 1;  //set flag to 1 indicating loop is broken
 		toClient.close(); //close stuff
 		return;
-  }
+	}
 }
 
 //Read from Client Thread
